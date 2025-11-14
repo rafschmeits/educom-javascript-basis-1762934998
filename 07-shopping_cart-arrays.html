@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  
+</head>
+<body>
+
+<script>
+  
+  const cart = [3.50, 1.99, 9.99, 17.49];
+
+ 
+  const total = cart.reduce((sum, price) => sum + price, 0);
+
+
+  const taxRate = 0.21;
+
+
+  const totalWithTax = total * (1 + taxRate);
+
+  // Show results
+  console.log("Prices:", cart);
+  console.log("Total without tax:", total.toFixed(2));
+  console.log("Total with 21% tax:", totalWithTax.toFixed(2));
+</script>
+
+</body>
+</html>
